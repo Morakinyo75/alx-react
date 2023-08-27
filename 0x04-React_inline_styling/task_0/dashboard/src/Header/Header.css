@@ -1,20 +1,14 @@
-:root {
-    --holberton-red: #e1484c;
-}
-
 .App-header {
+    background-color: #ffffff;
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    border-bottom: 3px solid var(--holberton-red);
-    margin-top: 30px;
+    align-items: center;
+    font-size: 20px;
+    color: #e0354b;
+    border-bottom: 3px solid #e0354b;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
-.App-header img {
-    width: 150px;
-}
-
-.App-header h1 {
-    margin: auto auto auto 0;
-    color: var(--holberton-red);
+.App-logo {
+  width: 200px;
 }

@@ -1,11 +1,13 @@
-:root {
-    --holberton-red: #e1484c;
+.App {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
 }
-
+  
 .App-body {
-    padding: 36px 24px;
+    margin: 50px;
+    text-align: left;
 }
-
+  
 .App-body input {
-    margin: 0 16px 0 8px;
+    margin-right: 10px;
 }
