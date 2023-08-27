@@ -1,13 +1,16 @@
-.App {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-}
-  
 .App-body {
-    margin: 50px;
-    text-align: left;
+	font-size: 1.4rem;
+	padding: 1.2em;
+	height: 45%;
 }
-  
-.App-body input {
-    margin-right: 10px;
+
+.form-inputs {
+	display: flex;
+	gap: 2em;
+	align-items: center;
+}
+
+.form-inputs .input input {
+	height: 1.4rem;
+	margin-left: 10px;
 }
