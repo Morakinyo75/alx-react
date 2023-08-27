@@ -43,4 +43,19 @@ describe('<Notififactions />', () => {
         const firstNotificationItem = notificationItems.first();
         expect(firstNotificationItem.prop('html')).toEqual({ __html: '<b>Test 1</b>' });
       });
+
+      test('calls the markAsRead function with the right message', () => {
+        const spyConsoleLog = jest.spyOn(console, 'log');
+        const dummyNotifications = [
+          { type: 'default', html: { __html: 'Test 1' }, value: 'Test 1' },
+          { type: 'info', html: { __html: 'Test 2' }, value: 'Test 2' },
+        ];
+        const wrapper = shallow(<Notifications displayDrawer notifications={dummyNotifications} />);
+    
+        const instance = wrapper.instance();
+        instance.markAsRead(1);
+    
+        expect(spyConsoleLog).toHaveBeenCalledWith('Notification 1 has been marked as read.');
+        spyConsoleLog.mockRestore();
+      });
     });
